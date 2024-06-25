@@ -6,7 +6,7 @@ import { FiLink } from "react-icons/fi";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FiVideo } from "react-icons/fi";
 
-import Button from "../../components/Button";
+import Button from "./Button";
 
 export default function ProjectItem({
   image,
@@ -22,7 +22,7 @@ export default function ProjectItem({
     <div className="relative text-[#ebebeb] md:w-1/2 cursor-pointer">
       <div className="relative z-10 border border-white bg-secondary h-full">
         <div>
-          <Image src={image} className="w-full h-full object-cover" />
+          <Image src={image} alt={title} className="w-full h-full object-cover" />
           <div className="m-3">
             <div className="border-b border-b-white py-1 mb-3 flex justify-between items-center">
               <h6>{title}</h6>
@@ -51,8 +51,8 @@ export default function ProjectItem({
             </div>
             <p className="xsmall mb-3">{details}</p>
             <div className="flex gap-x-4">
-              {techstack.map((stack) => (
-                <p className="small text-button">{stack}</p>
+              {techstack.map((stack, index) => (
+                <p key={index} className="small text-button">{stack}</p>
               ))}
             </div>
           </div>

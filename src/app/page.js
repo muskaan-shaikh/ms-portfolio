@@ -1,10 +1,9 @@
 import { Inter } from "next/font/google";
-import Main from "@/sections/Main";
-import Experience from "@/sections/Experience";
-import Projects from "@/sections/Projects";
-import Contact from "@/sections/Contact";
+import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import Initial from "@/components/Initial";
+import Main from "@/components/Main";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -12,7 +11,6 @@ const inter = Inter({
 export default function Home() {
   return (
     <main className={`${inter.className} h-screen w-screen bg-secondary`}>
-      {/* <Initial /> */}
       <Main />
       <Experience />
       <Projects />

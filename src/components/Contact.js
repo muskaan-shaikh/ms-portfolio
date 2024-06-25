@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <Layout id="contact" title="Contact">
       <div className="flex flex-col justify-center items-center">
-        <h3 className="text-primary mb-2">Let's Talk!</h3>
+        <h3 className="text-primary mb-2">Let&apos;s Talk!</h3>
         <p className="mb-5">Send me a message and I will get back soon</p>
         <textarea
           rows={10}

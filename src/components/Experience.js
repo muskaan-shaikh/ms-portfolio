@@ -1,12 +1,33 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Layout from "../../components/Layout";
+import Layout from "@/components/Layout";
 import experience from "@/assets/experience.json";
-import { ExpItem } from "./ExpItem";
-import Button from "../../components/Button";
+import Button from "@/components/Button";
 import { TbExternalLink } from "react-icons/tb";
+import Bullet from "@/assets/Bullet";
 
-export default function () {
+const ExpItem = ({ exp }) => {
+  return (
+    <div>
+      <p>
+        {exp.title}, <span className="text-primary">{exp.company}</span>
+      </p>
+      <p className="text-sm text-primaryLight italic mb-3">{exp.duration}</p>
+      <ul className="list-none">
+        {exp.work.map((point, index) => {
+          return (
+            <li key={index} className="mb-2 pl-3 flex items-center">
+              <Bullet className="mr-2" />
+              <p className="small">{point}</p>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+};
+
+export default function Experience() {
   const [active, setActive] = useState("exp1");
   const [mounted, setIsMounted] = useState(false);
   useEffect(() => {
@@ -14,7 +35,7 @@ export default function () {
   }, [active]);
   return (
     <Layout id="experience" title="Experience">
-      <ul className="bg-black relative flex justify-between z-0 mb-10">
+      <ul className="bg-black relative flex justify-between z-0 mb-10 w-full">
         <li
           className="w-1/2 cursor-pointer p-2 transition ease-in duration-300 text-center text-text hover:text-primary"
           onClick={() => setActive("exp1")}
