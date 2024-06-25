@@ -1,0 +1,38 @@
+[
+  {
+    "id": "exp1",
+    "title": "Software Engineer",
+    "company": "Solvitude Pty. Ltd.",
+    "duration": "Jan 2021 - Aug 2022",
+    "work": [
+      "Developed a ReactJS based enrolment platform incorporating a key feature of dynamic form development with JSON-driven specifications leading to 80% reduction in time and efforts for developing new forms.",
+      "Built a mobile application catering to variant form needs of users, expanding the platforms reach, accessibility, and usuability.",
+      "Implemented lazy loading, conditional rendering, and code splitting resulting in a noteworthy 70% reduction in load time.",
+      "Designed and implemented RESTful APIs for endpoint CRUD operations.",
+      "Created rigorous Jest test cases for API testing, ensuring robust functionality and reliable API performance.",
+      "Crafted a solid design system to enforce consistency across the application and enhance the overall user interface."
+    ]
+  },
+  {
+    "id": "exp2",
+    "title": "Independent React Developer",
+    "company": "Arham Labs",
+    "duration": "May 2022 - July 2022",
+    "work": [
+      "Integrated Google SSO to automate new employee onboaring process that resulted in 90% reduction in setup time.",
+      "Formulated and implemented strategic improvements on the UI leading to more intuitive user experience.",
+      "Played a pivotal role in migrating legacy code to modern frontend frameworks, increasing maintainability and performance."
+    ]
+  },
+  {
+    "id": "exp3",
+    "title": "Independent React Developer",
+    "company": "Early Startup",
+    "duration": "Aug 2021 - Oct 2021",
+    "work": [
+      "Built a dynamic food ordering UI by translating Figma designs into customizable and scalable Material UI elements.",
+      "Engaged directly with client to discuss and brainstorm project requirements, scope, and technical specifications.",
+      "Integrated Context API to share user preferences and order details across any component of the application."
+    ]
+  }
+]
