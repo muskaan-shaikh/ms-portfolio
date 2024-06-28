@@ -52,7 +52,7 @@ export default function Projects() {
             <p className="xsmall mb-3">
               Recognised with{" "}
               <span className="text-primary">
-                Outstanding Master's Capstone Award
+                Outstanding Master&apos;s Capstone Award
               </span>
             </p>
           }
