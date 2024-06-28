@@ -23,24 +23,24 @@ Make sure you have the following installed on your system:
 
 1. Clone the repository:
 
-   \`\`\`bash
+   ```bash
    git clone https://github.com/muskaan-shaikh/ms-portfolio.git
    cd ms-portfolio
-   \`\`\`
+   ```
 
 2. Install the dependencies:
 
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 ### Running the Project
 
 1. Start the development server:
 
-   \`\`\`bash
+   ```bash
    npm run dev
-   \`\`\`
+   ```
 
 2. Open your browser and navigate to \`http://localhost:3000\` to view the website.
 
@@ -48,9 +48,9 @@ Make sure you have the following installed on your system:
 
 To create an optimized production build, run:
 
-\`\`\`bash
+```bash
 npm run build
-\`\`\`
+```
 
 ### Deploying
 
