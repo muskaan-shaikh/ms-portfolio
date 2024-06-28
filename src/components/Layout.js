@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { easeIn, motion } from "framer-motion";
 import React from "react";
 
 export default function Layout({ children, id, title }) {
@@ -11,8 +11,7 @@ export default function Layout({ children, id, title }) {
       transition: {
         duration: 1,
         type: "spring",
-        damping: 10,
-        stiffness: 100,
+        easeIn
       },
     },
   };

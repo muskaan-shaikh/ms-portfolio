@@ -18,7 +18,7 @@ export default function Main() {
         duration: 0.5,
         type: "spring",
         damping: 10,
-        stiffness: 100,
+        stiffness: 50,
         delay: delay,
       },
     },
@@ -74,7 +74,7 @@ export default function Main() {
           <motion.div
             initial="hidden"
             animate="visible"
-            variants={textVariants(2.5)}
+            variants={textVariants(2.4)}
           >
             <Button
               variant="outlined"

@@ -8,7 +8,7 @@ import { FiVideo } from "react-icons/fi";
 import { RiArticleLine } from "react-icons/ri";
 import { BsFiletypePpt } from "react-icons/bs";
 import Button from "./Button";
-import { motion } from "framer-motion";
+import { easeIn, motion } from "framer-motion";
 
 export default function ProjectItem({
   image,
@@ -32,8 +32,7 @@ export default function ProjectItem({
       transition: {
         duration: 1,
         type: "spring",
-        damping: 10,
-        stiffness: 100,
+        easeIn
       },
     },
   };
