@@ -33,8 +33,17 @@ export default function Main() {
         alt="Star"
         className="absolute inset-0 w-full h-full object-cover z-10"
       />
-      <div className="absolute inset-0 w-full h-full bg-custom-radial-bottom-right md:bg-custom-radial">
-        <div className="absolute inset-0 left-[5%] right-[5%] md:left-[10%] flex flex-col justify-center">
+      <motion.div
+        initial={{ background: "#000000", opacity: 0 }}
+        animate={{
+          background:
+            "radial-gradient(circle at 105%, #000000, #000000 5%, #c47820 25%, #000000 25%)",
+          opacity: 1,
+        }}
+        transition={{ duration: 1 }}
+        className="absolute inset-0 w-full h-full bg-custom-radial-bottom-right md:bg-custom-radial"
+      >
+        <div className="absolute inset-0 left-[5%] right-[5%] md:left-[10%] flex flex-col justify-center z-10">
           <motion.h1
             initial="hidden"
             animate="visible"
@@ -57,10 +66,10 @@ export default function Main() {
             variants={textVariants(2.2)}
             className="md:w-[70%] mb-[15%] md:mb-[6%] text-text"
           >
-            I&apos;m a recent graduate with MS in CS degree diving into the world of
-            software engineering. I&apos;m passionate about coding and crafting
-            impactful online solutions, especially in web development and AI
-            integration.
+            I&apos;m a recent graduate with MS in CS degree diving into the
+            world of software engineering. I&apos;m passionate about coding and
+            crafting impactful online solutions, especially in web development
+            and AI integration.
           </motion.p>
           <motion.div
             initial="hidden"
@@ -75,7 +84,7 @@ export default function Main() {
             </Button>
           </motion.div>
         </div>
-      </div>
+      </motion.div>
       <Sidebar />
     </div>
   );

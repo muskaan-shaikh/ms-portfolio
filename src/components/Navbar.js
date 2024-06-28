@@ -27,7 +27,7 @@ export default function Navbar() {
       <ul
         className={`flex gap-x-8 md:gap-x-10 transition-all ease-linear duration-200 border border-transparent ${
           isPageScrolled &&
-          "bg-[#666666] bg-opacity-20 backdrop-filter backdrop-blur-lg border-2 border-light border-opacity-50 shadow-lg rounded-full px-8 py-1"
+          "bg-[#333] bg-opacity-20 backdrop-filter backdrop-blur-lg border-2 border-white border-opacity-50 shadow-lg rounded-full px-8 py-1"
         }`}
       >
         <li

@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 export default function Sidebar() {
@@ -12,7 +11,7 @@ export default function Sidebar() {
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 1 }}
-        className="fixed bottom-6 flex left-[2%] md:bottom-0 md:flex-col justify-between items-center"
+        className="fixed bottom-6 flex left-[2%] md:bottom-0 md:flex-col justify-between items-center z-20"
       >
         <FaGithub
           size={25}

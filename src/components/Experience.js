@@ -66,6 +66,7 @@ export default function Experience() {
           <ExpItem exp={experience[0]} />
         </div>
       )}
+
       {active === "exp2" && (
         <div
           className={`transition-all duration-300 ease-in flex flex-col gap-y-10 items-start ${
