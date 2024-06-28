@@ -30,7 +30,7 @@ export default function ProjectItem({
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.5,
+        duration: 1,
         type: "spring",
         damping: 10,
         stiffness: 100,

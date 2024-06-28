@@ -5,7 +5,16 @@ import React from "react";
 export default function Layout({ children, id, title }) {
   const variants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeIn" } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        type: "spring",
+        damping: 10,
+        stiffness: 100,
+      },
+    },
   };
   return (
     <div
