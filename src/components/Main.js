@@ -74,7 +74,7 @@ export default function Main() {
           <motion.div
             initial="hidden"
             animate="visible"
-            variants={textVariants(2.4)}
+            variants={textVariants(2.3)}
           >
             <Button
               variant="outlined"

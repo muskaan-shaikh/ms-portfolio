@@ -8,7 +8,7 @@ import { FiVideo } from "react-icons/fi";
 import { RiArticleLine } from "react-icons/ri";
 import { BsFiletypePpt } from "react-icons/bs";
 import Button from "./Button";
-import { easeIn, motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 
 export default function ProjectItem({
   image,
@@ -25,14 +25,14 @@ export default function ProjectItem({
   recognition,
 }) {
   const variants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 1,
-        type: "spring",
-        easeIn
+        duration: 0.5,
+        delay: 0.2,
+        ease: [0.645, 0.045, 0.355, 1],
       },
     },
   };
