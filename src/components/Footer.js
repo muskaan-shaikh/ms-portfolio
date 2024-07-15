@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="w-screen h-32 bg-secondary flex items-center justify-center">
+    <footer className="w-screen h-32 bg-secondary flex items-center justify-center">
       <a
         href="https://github.com/muskaan-shaikh/ms-portfolio"
         target="_blank"
@@ -10,6 +10,6 @@ export default function Footer() {
       >
         &copy; 2024 Muskaan Shaikh
       </a>
-    </div>
+    </footer>
   );
 }

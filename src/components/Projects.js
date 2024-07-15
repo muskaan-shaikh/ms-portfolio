@@ -17,12 +17,13 @@ export default function Projects() {
           details={
             <>
               Collaborated with another team member{" "}
-              <span
-                className="text-primary hover:underline"
-                onClick={() => window.open("https://builtbypeter.us/")}
+              <a
+                className="text-primary hover:underline cursor-pointer"
+                href="https://builtbypeter.us/"
+                target="_blank"
               >
                 Peter
-              </span>{" "}
+              </a>{" "}
               to create a service which allows users to capture an image of
               their document, where their handwriting is converted to text and
               stored in a database of responses for the organiser to view and

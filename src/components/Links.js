@@ -15,23 +15,27 @@ export default function Links() {
         transition={{ duration: 1 }}
         className="flex justify-evenly items-center "
       >
-        <FaGithub
-          size={25}
+        <a
+          href="https://github.com/muskaan-shaikh"
+          target="_blank"
           className="cursor-pointer hover:scale-150 ease-in duration-300"
-          onClick={() => window.open("https://github.com/muskaan-shaikh")}
-        />
-        <FaLinkedin
-          size={25}
+        >
+          <FaGithub size={25} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/shaikh-muskaan"
+          target="_blank"
           className="cursor-pointer hover:scale-150 ease-in duration-300"
-          onClick={() =>
-            window.open("https://www.linkedin.com/in/shaikh-muskaan")
-          }
-        />
-        <MdEmail
-          size={25}
+        >
+          <FaLinkedin size={25} />
+        </a>
+        <a
+          href="mailto:muskaan.mysa@gmail.com"
+          target="_blank"
           className="cursor-pointer hover:scale-150 ease-in duration-300"
-          onClick={() => window.open("mailto:muskaan.mysa@gmail.com")}
-        />
+        >
+          <MdEmail size={25} />
+        </a>
       </motion.div>
     </div>
   );

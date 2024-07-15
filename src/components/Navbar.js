@@ -18,7 +18,7 @@ export default function Navbar() {
     };
   }, [isPageScrolled]);
   return (
-    <motion.div
+    <motion.nav
       initial={{ y: -50, opacity: 0 }}
       animate={{ y:0, opacity: 1 }}
       transition={{ duration: 1, delay: 1 }}
@@ -71,6 +71,6 @@ export default function Navbar() {
           <Link href="#contact">Contact</Link>
         </li>
       </ul>
-    </motion.div>
+    </motion.nav>
   );
 }

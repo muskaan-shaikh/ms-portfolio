@@ -57,39 +57,66 @@ export default function ProjectItem({
               <h6>{title}</h6>
               <div className="flex gap-x-5">
                 {github && (
-                  <FiGithub
+                  <a
+                    href={github}
+                    target="_blank"
                     className="cursor-pointer hover:text-primary"
-                    onClick={() => window.open(github)}
-                  />
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <FiGithub />
+                  </a>
                 )}
                 {link && (
-                  <FiLink
+                  <a
+                    href={link}
+                    target="_blank"
                     className="cursor-pointer hover:text-primary"
-                    onClick={() => window.open(link)}
-                  />
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <FiLink />
+                  </a>
                 )}
                 {video && (
-                  <FiVideo
+                  <a
+                    href={video}
+                    target="_blank"
                     className="cursor-pointer hover:text-primary"
-                    onClick={() => window.open(video)}
-                  />
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <FiVideo />
+                  </a>
                 )}
                 {blog && (
-                  <RiArticleLine
+                  <a
+                    href={blog}
+                    target="_blank"
                     className="cursor-pointer hover:text-primary"
-                    onClick={() => window.open(blog)}
-                  />
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <RiArticleLine />
+                  </a>
                 )}
                 {ppt && (
-                  <BsFiletypePpt
+                  <a
+                    href={ppt}
+                    target="_blank"
                     className="cursor-pointer hover:text-primary"
-                    onClick={() => window.open(ppt)}
-                  />
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <BsFiletypePpt />
+                  </a>
                 )}
                 {more && (
-                  <Button>
-                    Read More <FaArrowRightLong />
-                  </Button>
+                  <a
+                    href={more}
+                    target="_blank"
+                    className="cursor-pointer hover:text-primary"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <Button>
+                      Read More <FaArrowRightLong />
+                    </Button>
+                  </a>
                 )}
               </div>
             </div>

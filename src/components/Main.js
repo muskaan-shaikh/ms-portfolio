@@ -71,18 +71,17 @@ export default function Main() {
             crafting impactful online solutions, especially in web development
             and AI integration.
           </motion.p>
-          <motion.div
+          <motion.a
             initial="hidden"
             animate="visible"
             variants={textVariants(2.3)}
+            href="Resume.pdf"
+            target="_blank"
           >
-            <Button
-              variant="outlined"
-              onClick={() => window.open("Resume.pdf", "_blank")}
-            >
+            <Button variant="outlined">
               Resume <FaArrowRightLong />
             </Button>
-          </motion.div>
+          </motion.a>
         </div>
       </motion.div>
       <Sidebar />

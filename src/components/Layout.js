@@ -16,7 +16,7 @@ export default function Layout({ children, id, title }) {
     },
   };
   return (
-    <div
+    <section
       id={id}
       className="bg-secondary w-screen px-[5%] md:px-[10%] py-20 md:py-10 text-light"
     >
@@ -29,6 +29,6 @@ export default function Layout({ children, id, title }) {
       >
         {children}
       </motion.div>
-    </div>
+    </section>
   );
 }

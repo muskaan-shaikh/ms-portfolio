@@ -76,16 +76,11 @@ export default function Experience() {
           <ExpItem exp={experience[1]} />
           <ExpItem exp={experience[2]} />
           <div className="-mt-9 pl-8">
-            <Button
-              onClick={() =>
-                window.open(
-                  "https://dine-in-or-take-away.netlify.app",
-                  "_blank"
-                )
-              }
-            >
-              View Template <TbExternalLink />
-            </Button>
+            <a href="https://dine-in-or-take-away.netlify.app" target="_blank">
+              <Button>
+                View Template <TbExternalLink />
+              </Button>
+            </a>
           </div>
         </div>
       )}
