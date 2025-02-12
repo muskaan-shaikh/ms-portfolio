@@ -8,7 +8,7 @@ export default function Footer() {
         target="_blank"
         className=" flex justify-center items-center cursor-pointer hover:text-primary"
       >
-        &copy; 2024 Muskaan Shaikh
+        &copy; {new Date().getFullYear()} Muskaan Shaikh
       </a>
     </footer>
   );
